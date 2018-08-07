@@ -26,6 +26,9 @@ module.exports = {
             use: ['style-loader', 'css-loader', 'sass-loader']
         }]
     },
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },   
     plugins: [
         new HtmlWebPackPlugin({
             template: "./public/index.html",
